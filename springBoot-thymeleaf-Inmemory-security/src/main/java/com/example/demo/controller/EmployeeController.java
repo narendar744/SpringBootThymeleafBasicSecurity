@@ -59,10 +59,8 @@ public class EmployeeController {
 	
 		List<Employee> theEmployees = service.searchBy(theName);
 		
-		// add to the spring model
 		theModel.addAttribute("employees", theEmployees);
 		
-		// send to /employees/list
 		return "/employee/list-employee";
 		
 	}
